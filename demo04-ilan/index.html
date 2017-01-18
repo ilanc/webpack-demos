@@ -1,0 +1,19 @@
+<!-- this .html gets loaded by html-loader and extracted to build04/index.html, <img>s get passed on to configured loader -->
+<html>
+  <head>
+    <script type="text/javascript" src="bundle.js"></script>
+  </head>
+  <body>
+    <h1>Demo .html building and images (.html img-src and .css url)</h1>
+    <table>
+      <tr>
+        <td>HTML = &lt;img src=&quot;1.png&quot;&gt;</td>
+        <td><img src="1.png"></td> <!-- 1.png gets loaded by url-loader and written to build04/[hash].png -->
+      </tr>
+      <tr>
+        <td>CSS = #box { background-image: url('2.png'); }</td>
+        <td><div id="box" style="width:225px;height:225px;"></div></td> <!-- 2.png configured in app.css - processed by require('./app.css'); in main.js -->
+      </tr>
+    </table>
+  </body>
+</html>

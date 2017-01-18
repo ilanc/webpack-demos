@@ -29,7 +29,9 @@
     "style-loader": "0.x",
     "url-loader": "~0.5.6",
     "webpack": "1.x",
-    "webpack-dev-server": "1.x"
+    "webpack-dev-server": "1.x",
+    "extract-loader": "^0.1.0",
+    "html-loader": "^0.4.4"
   },
   "repository": "ruanyf/webpack-demos"
 }
